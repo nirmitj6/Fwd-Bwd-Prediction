@@ -7,4 +7,4 @@ So far, we look at the two training objectives:
 
 We train two models both on GPT2 like architecture with ~175 M paramaeters on tinystories datasets, with identical hyperparmeter settings and architecture. One does next token prediction in the forward direction and the other in the backward direction. All the arcitecture details, context-size, and optimizaion details (with AdamW) are similar to the standard [GPT2 paper](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf). The dataset we use is [TinyStories](https://huggingface.co/datasets/roneneldan/TinyStories) by Eldan and Li. The total number of iterations of the optimizer is set in such that it corrreponds to two epochs with TinyStories.
 
-Before executing the code, make sure the dataset `TinyStoriesTrain.txt` and `TinyStoriesTest.txt` are at the path.
+Before executing the code, make sure the dataset `TinyStoriesTrain.txt` and `TinyStoriesTest.txt` are at the path. The training is completed under 3 hours on a GPU node with four NVIDIA A6000 RTX GPUs.
