@@ -1,5 +1,5 @@
 # Fwd-Bwd-Prediction
-This is towards a working project on understanding the effect of different training objective on the quality of language generation. The project and this file will be updated regularly with new codes.
+This is towards a working project on understanding the effect of different training objective on the quality of language generation. The project and this Readme file will be updated regularly with new codes.
 
 So far, we look at the two training objectives:
 (1) The standard next token prediction with Cross Entropy Loss 
